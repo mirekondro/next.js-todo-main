@@ -15,7 +15,7 @@ export default async function Home() {
 
   return (
     <>
-      <header className="flex justify-between items-center pb-5">
+      <header className="mt-16 flex justify-between items-center pb-5">
         <h1 className="classNamelg lg:text-5xl font-bold tracking-tight text-black-500">Your Todo's</h1>
         <Link
           href="/new"
