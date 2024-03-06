@@ -36,7 +36,7 @@ export function TodoItem(props: TodoItemProps) {
       const deletedTodo = await data.deleteTodo(id);
       
       setData((data) => ({...data, ...deletedTodo}));
-      // setData({...data, ...deletedTodo}); //identical in this case
+      // setData({...data, ...deletedTodo});
     }
   }
 
@@ -49,11 +49,11 @@ export function TodoItem(props: TodoItemProps) {
         defaultChecked={data.complete}
         // onChange={(e) => toggleTodo(id, e.target.checked)}
         onChange={(e) => performToggleTodo(data.id, e.target.checked)}
-        className="cursor-pointer peer accent-zinc-400"
+        className="cursor-grab peer accent-zinc-400"
       />
       <label
         htmlFor={data.id}
-        className="cursor-pointer peer-checked:line-through peer-checked:text-zinc-400"
+        className="cursor-grab peer-checked:line-through peer-checked:text-zinc-400"
       >
         {data.title}
       </label>
