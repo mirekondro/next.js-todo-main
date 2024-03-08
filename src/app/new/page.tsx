@@ -6,7 +6,7 @@ export default function New() {
   return (
     <>
       <header className="flex pb-5">
-        <h1 className="classNamelg lg:text-5xl font-bold tracking-tight text-black-500">New Todo Item: </h1>
+        <h1 className="classNamelg lg:text-5xl font-bold tracking-tight text-black-500">New Todo: </h1>
       </header>
       <form action={createTodoItem} className="flex gap-2 flex-col">
         <input
