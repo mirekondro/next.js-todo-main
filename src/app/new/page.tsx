@@ -6,7 +6,7 @@ export default function New() {
   return (
     <>
       <header className="flex pb-5">
-        <h1 className="text-2xl underline underline-offset-4">New Todo Item: </h1>
+        <h1 className="classNamelg lg:text-5xl font-bold tracking-tight text-black-500">New Todo Item: </h1>
       </header>
       <form action={createTodoItem} className="flex gap-2 flex-col">
         <input
@@ -20,13 +20,13 @@ export default function New() {
             href=".."
             className="border border-slate-300 text-slate-300 rounded px-2 py-1 hover:bg-zinc-700 focus-within:bg-zinc-700 outline-none"
           >
-            Cancel
+            CANCEL
           </Link>
           <button
             type="submit"
             className="border border-slate-300 text-slate-300 rounded px-2 py-1 hover:bg-zinc-700 focus-within:bg-zinc-700 outline-none"
           >
-            Save
+            SAVE
           </button>
         </div>
       </form>
@@ -35,7 +35,7 @@ export default function New() {
 }
 
 async function createTodoItem(data: FormData) {
-  "use server"; //it means this function is a server code and it will never run in the client. it only runs on the server even if a log is within this function it will not be printed
+  "use server";
 
   const title = data.get("title")?.valueOf();
 
