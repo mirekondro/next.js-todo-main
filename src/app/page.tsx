@@ -19,7 +19,7 @@ export default async function Home() {
         <h1 className="classNamelg lg:text-5xl font-bold tracking-tight text-black-500">Your Todo's</h1>
         <Link
           href="/new"
-          className="border border-slate-300 text-slate-300 rounded px-2 py-1 hover:bg-zinc-700 focus-within:bg-zinc-700 outline-none"
+          className="border border-slate-300 text-slate-300 rounded-0 px-2 py-1 hover:bg-zinc-700 focus-within:bg-zinc-700 outline-none"
         >
           ADD NEW
         </Link>
