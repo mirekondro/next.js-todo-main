@@ -39,7 +39,7 @@ async function createTodoItem(data: FormData) {
 
   const title = data.get("title")?.valueOf();
 
-  if (typeof title !== "string" || title.length === 0) {
+  if (typeof title !== "string" || title.length === null) {
     return new Error("Invalid Title");
   }
 
